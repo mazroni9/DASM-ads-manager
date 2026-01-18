@@ -1,59 +1,104 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# DASMe Ads Platform - نظام إعلانات DASMe
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## 🎉 Laravel Project كامل - جاهز للنشر!
 
-## About Laravel
+هذا **Laravel 12 project كامل** يحتوي على نظام إعلانات متكامل لمنصة DASMe.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## ✨ المميزات
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+- ✅ **Backend API كامل** - جميع Endpoints جاهزة
+- ✅ **7 Services** - Ranking, Serving, Tracking, Billing, Anti-Fraud
+- ✅ **6 Controllers** - Campaign, Creative, Account, Wallet, Reports
+- ✅ **8 Models** - مع العلاقات الكاملة
+- ✅ **8 Migrations** - قاعدة البيانات جاهزة
+- ✅ **DASMe Integration** - ربط مع منصة DASMe الأم
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## 🚀 النشر على Vercel
 
-## Learning Laravel
+### الخطوة 1: إعداد Environment Variables
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+في Vercel Dashboard → Settings → Environment Variables:
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+```env
+APP_KEY=base64:... (generate with: php artisan key:generate)
+APP_ENV=production
+APP_DEBUG=false
+APP_URL=https://your-app.vercel.app
 
-## Laravel Sponsors
+DB_CONNECTION=mysql
+DB_HOST=your-db-host
+DB_PORT=3306
+DB_DATABASE=your-database
+DB_USERNAME=your-username
+DB_PASSWORD=your-password
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+DASM_API_URL=https://dasm.example.com/api/v1
+DASM_API_TOKEN=your-token
+ADS_TRACKING_SECRET=your-secret-key
+```
 
-### Premium Partners
+### الخطوة 2: Deploy على Vercel
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+1. اذهب إلى [vercel.com](https://vercel.com)
+2. اضغط "Add New Project"
+3. Import من GitHub: `mazroni9/DASM-ads-manager`
+4. Vercel سيكتشف Laravel تلقائياً
+5. اضغط "Deploy"
 
-## Contributing
+### الخطوة 3: إعداد Database
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+بعد النشر، قم بتشغيل Migrations:
 
-## Code of Conduct
+```bash
+# في Vercel CLI أو SSH
+php artisan migrate
+```
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## 📋 API Endpoints
 
-## Security Vulnerabilities
+### Public (لا يحتاج auth)
+- `GET /api/ads/serve` - عرض الإعلانات
+- `POST /api/ads/track` - تتبع الأحداث
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+### Protected (يحتاج Bearer token)
+- `GET /api/ads/account` - الحساب
+- `GET /api/ads/campaigns` - قائمة الحملات
+- `POST /api/ads/campaigns` - إنشاء حملة
+- `GET /api/ads/wallet/transactions` - سجل المعاملات
+- `POST /api/ads/wallet/topup` - شحن الرصيد
+- `GET /api/ads/reports/summary` - التقارير
 
-## License
+## 🔧 التطوير المحلي
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+```bash
+# Install dependencies
+composer install
+
+# Setup environment
+cp .env.example .env
+php artisan key:generate
+
+# Run migrations
+php artisan migrate
+
+# Start server
+php artisan serve
+```
+
+## 📚 الوثائق
+
+جميع الوثائق في مجلد `docs/`:
+- ERD.md - مخطط قاعدة البيانات
+- API.md - مواصفات API
+- DASM-INTEGRATION.md - دليل Integration
+
+## 🔗 Links
+
+- **GitHub**: https://github.com/mazroni9/DASM-ads-manager
+- **Vercel**: (بعد النشر)
+
+---
+
+**تم البناء**: 2024-01-18  
+**Laravel Version**: 12.11.1  
+**PHP Version**: 8.4+
