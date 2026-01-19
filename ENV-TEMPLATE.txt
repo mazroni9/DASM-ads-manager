@@ -1,0 +1,31 @@
+# ============================================
+# Environment Variables Template
+# للنسخ واللصق في Vercel/Railway
+# ============================================
+
+# ========== Laravel الأساسية ==========
+APP_KEY=base64:PASTE_GENERATED_KEY_HERE
+APP_ENV=production
+APP_DEBUG=false
+APP_URL=https://your-app.vercel.app
+
+# ========== قاعدة البيانات ==========
+DB_CONNECTION=pgsql
+DB_HOST=your-database-host.com
+DB_PORT=5432
+DB_DATABASE=your-database-name
+DB_USERNAME=your-db-username
+DB_PASSWORD=your-db-password
+
+# ========== DASMe Integration ==========
+DASM_API_URL=https://dasm.example.com/api/v1
+DASM_API_TOKEN=your-dasm-api-token-here
+DASM_WEBHOOK_SECRET=your-webhook-secret-here
+
+# ========== Ads Platform ==========
+ADS_TRACKING_SECRET=your-random-secret-key-32-chars-minimum
+
+# ========== اختيارية (Defaults موجودة) ==========
+# SESSION_DRIVER=file
+# CACHE_DRIVER=file
+# QUEUE_CONNECTION=sync
