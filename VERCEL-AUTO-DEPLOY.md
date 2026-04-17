@@ -11,7 +11,7 @@
 1. اذهب إلى [vercel.com](https://vercel.com)
 2. اضغط **"Add New Project"**
 3. اختر **"Import Git Repository"**
-4. اختر `mazroni9/DASM-ads-manager`
+4. اختر `DASMe-9/dasm-ads`
 5. في إعدادات المشروع:
    - ✅ تأكد من **"Automatically deploy"** مفعّل
    - ✅ Framework Preset: **Laravel**

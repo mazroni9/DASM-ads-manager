@@ -41,7 +41,7 @@ ADS_TRACKING_SECRET=your-secret-key
 
 1. اذهب إلى [vercel.com](https://vercel.com)
 2. اضغط "Add New Project"
-3. Import من GitHub: `mazroni9/DASM-ads-manager`
+3. Import من GitHub: `DASMe-9/dasm-ads`
 4. Vercel سيكتشف Laravel تلقائياً
 5. اضغط "Deploy"
 
@@ -94,7 +94,7 @@ php artisan serve
 
 ## 🔗 Links
 
-- **GitHub**: https://github.com/mazroni9/DASM-ads-manager
+- **GitHub**: https://github.com/DASMe-9/dasm-ads
 - **Vercel**: (بعد النشر)
 
 ---

@@ -16,7 +16,7 @@ Railway يدعم PHP/Laravel بشكل كامل + Deploy تلقائي من GitHub
 
 1. اضغط **"New Project"**
 2. اختر **"Deploy from GitHub repo"**
-3. اختر `mazroni9/DASM-ads-manager`
+3. اختر `DASMe-9/dasm-ads`
 4. Railway سيكتشف Laravel تلقائياً ✅
 
 ### 3. إضافة Database

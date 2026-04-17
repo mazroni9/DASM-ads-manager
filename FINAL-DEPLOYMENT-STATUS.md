@@ -10,7 +10,7 @@
    - Backend API 100% جاهز
 
 2. **GitHub** ✅
-   - Repository: https://github.com/mazroni9/DASM-ads-manager
+   - Repository: https://github.com/DASMe-9/dasm-ads
    - جميع الملفات مرفوعة
    - Git history كامل
 
@@ -38,7 +38,7 @@
 1. **اذهب إلى**: [railway.app](https://railway.app)
 2. **Login**: بحساب GitHub
 3. **New Project** → **Deploy from GitHub**
-4. **اختر**: `mazroni9/DASM-ads-manager`
+4. **اختر**: `DASMe-9/dasm-ads`
 5. **Add Database**: PostgreSQL (مجاني)
 6. **Environment Variables**: (انظر `RAILWAY-DEPLOY.md`)
 7. **Deploy!** ✅
@@ -60,7 +60,7 @@
 
 ## 🔗 Links
 
-- **GitHub**: https://github.com/mazroni9/DASM-ads-manager
+- **GitHub**: https://github.com/DASMe-9/dasm-ads
 - **Railway**: (بعد النشر) https://railway.app/dashboard
 - **Production URL**: (بعد النشر)
 
@@ -70,7 +70,7 @@
 
 1. [railway.app](https://railway.app) → Login with GitHub
 2. New Project → Deploy from GitHub repo
-3. اختر `mazroni9/DASM-ads-manager`
+3. اختر `DASMe-9/dasm-ads`
 4. Add PostgreSQL Database
 5. أضف Environment Variables
 6. Deploy! 🚀

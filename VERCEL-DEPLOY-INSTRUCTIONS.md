@@ -2,7 +2,7 @@
 
 ## ✅ تم رفع Laravel Project إلى GitHub!
 
-**Repository**: https://github.com/mazroni9/DASM-ads-manager
+**Repository**: https://github.com/DASMe-9/dasm-ads
 
 ## 📋 خطوات النشر على Vercel
 
@@ -14,7 +14,7 @@
 
 1. اضغط **"Add New Project"**
 2. اختر **"Import Git Repository"**
-3. ابحث عن `mazroni9/DASM-ads-manager`
+3. ابحث عن `DASMe-9/dasm-ads`
 4. اضغط **"Import"**
 
 ### 3. إعدادات Build

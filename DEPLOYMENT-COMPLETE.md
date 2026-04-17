@@ -19,7 +19,7 @@
 - ✅ Routes (`routes/api-ads.php`)
 
 ### 3. GitHub ✅
-- ✅ تم رفع Laravel project كامل إلى: https://github.com/mazroni9/DASM-ads-manager
+- ✅ تم رفع Laravel project كامل إلى: https://github.com/DASMe-9/dasm-ads
 - ✅ 96 ملف تم رفعه
 - ✅ Commit: `a7ab419` - Laravel project with DASMe Ads Platform
 
@@ -32,7 +32,7 @@
 ### الخطوة 2: Import Project
 1. اضغط **"Add New Project"**
 2. اختر **"Import Git Repository"**
-3. ابحث عن: `mazroni9/DASM-ads-manager`
+3. ابحث عن: `DASMe-9/dasm-ads`
 4. اضغط **"Import"**
 
 ### الخطوة 3: إعدادات Build
@@ -138,7 +138,7 @@ php artisan migrate --force
 **اذهب إلى Vercel الآن و Deploy!**
 
 1. https://vercel.com
-2. Import `mazroni9/DASM-ads-manager`
+2. Import `DASMe-9/dasm-ads`
 3. أضف Environment Variables
 4. Deploy!
 
@@ -146,4 +146,4 @@ php artisan migrate --force
 
 **تم البناء**: 2024-01-18  
 **Laravel**: 12.11.1  
-**GitHub**: https://github.com/mazroni9/DASM-ads-manager
+**GitHub**: https://github.com/DASMe-9/dasm-ads

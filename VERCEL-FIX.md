@@ -76,7 +76,7 @@ git push
 1. اذهب إلى [railway.app](https://railway.app)
 2. Login with GitHub
 3. New Project → Deploy from GitHub repo
-4. اختر `mazroni9/DASM-ads-manager`
+4. اختر `DASMe-9/dasm-ads`
 5. Railway يكتشف Laravel تلقائياً ✅
 6. Add PostgreSQL Database
 7. Deploy! ✅

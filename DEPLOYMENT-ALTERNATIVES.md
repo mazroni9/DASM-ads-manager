@@ -18,7 +18,7 @@
 1. اذهب إلى [railway.app](https://railway.app)
 2. Login بحساب GitHub
 3. New Project → Deploy from GitHub
-4. اختر `mazroni9/DASM-ads-manager`
+4. اختر `DASMe-9/dasm-ads`
 5. Railway سيكتشف Laravel تلقائياً
 6. أضف PostgreSQL Database
 7. Deploy!
@@ -34,7 +34,7 @@
 
 **الخطوات:**
 1. [render.com](https://render.com) → New → Web Service
-2. Connect GitHub → `mazroni9/DASM-ads-manager`
+2. Connect GitHub → `DASMe-9/dasm-ads`
 3. Build Command: `composer install --no-dev --optimize-autoloader`
 4. Start Command: `php artisan serve`
 5. Add PostgreSQL Database
